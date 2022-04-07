@@ -1,0 +1,16 @@
+{
+  "name": "veefriendsnft",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ veefriendsnft",
+    "create-local": "graph create --node http://localhost:8020/ veefriendsnft",
+    "remove-local": "graph remove --node http://localhost:8020/ veefriendsnft",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 veefriendsnft"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.22.4",
+    "@graphprotocol/graph-ts": "0.22.1"
+  }
+}
